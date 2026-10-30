@@ -80,7 +80,7 @@ const LorqusShowcase = () => {
           
           <div className="flex items-center gap-4 mb-16">
             <a 
-              href="https://github.com" 
+              href="https://github.com/FebArch" 
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2.5 bg-primary text-background px-6 py-3 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors"

@@ -69,7 +69,7 @@ const Navbar = () => {
               Contact
             </a>
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/FebArch" 
               target="_blank" 
               rel="noreferrer" 
               className="flex items-center gap-2 bg-primary text-background px-4 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors"
