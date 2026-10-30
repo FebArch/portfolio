@@ -4,6 +4,7 @@ import HeroTitle from './components/HeroTitle';
 import BentoGrid from './components/BentoGrid';
 import ProductShowcase from './components/ProductShowcase';
 import LorqusShowcase from './components/LorqusShowcase';
+import PredictiveShowcase from './components/PredictiveShowcase'
 import BottomCTA from './components/BottomCTA';
 import Footer from './components/Footer';
 
@@ -37,6 +38,11 @@ const App = () => {
         {/* Lorqus: Image on Left (Zig-Zag Layout) */}
         <section className="mb-12 w-full">
           <LorqusShowcase />
+        </section>
+
+        {/* Predictive Maintenance (Command Center Layout) */}
+        <section className="mb-32 w-full">
+          <PredictiveShowcase />
         </section>
 
       <BottomCTA />
