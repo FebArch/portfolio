@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+/* 1. Define Light Theme (Hex codes work perfectly in v4!) */
+:root {
+  --color-base-bg: #ffffff;
+  --color-base-surface: #f3f4f6;
+  --color-base-primary: #000000;
+  --color-base-muted: #52525b;
+}
+
+/* 2. Define Dark Theme */
+html.dark {
+  --color-base-bg: #000000;
+  --color-base-surface: #111111;
+  --color-base-primary: #ffffff;
+  --color-base-muted: #888888;
+}
+
+/* 3. Register custom colors with Tailwind v4 */
+@theme {
+  --color-background: var(--color-base-bg);
+  --color-surface: var(--color-base-surface);
+  --color-primary: var(--color-base-primary);
+  --color-muted: var(--color-base-muted);
+}
+
+/* 4. Apply global base styles */
+@layer base {
+  body {
+    background-color: var(--color-base-bg);
+    color: var(--color-base-primary);
+    @apply antialiased transition-colors duration-300;
+  }
+  
+  ::selection {
+    background-color: var(--color-base-primary);
+    color: var(--color-base-bg);
+  }
+}
